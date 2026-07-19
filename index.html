@@ -6,6 +6,7 @@
     <title>Vroomy - The Next Generation Car Marketplace</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="logo_green.svg">
     <script>
         tailwind.config = {
             theme: {
@@ -23,9 +24,14 @@
         <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-lime-400/10 rounded-full blur-3xl"></div>
 
         <div class="relative z-10">
-            <h1 class="text-4xl md:text-5xl font-black tracking-tighter uppercase mb-2">
-                Vroomy<span class="text-lime-400">.be</span>
-            </h1>
+            <!-- Блок с логотипом и названием -->
+            <div class="flex flex-col items-center mb-2">
+                <img src="logo_green.svg" alt="Vroomy Logo" class="h-16 w-auto mb-4 object-contain select-none pointer-events-none" />
+                <h1 class="text-4xl md:text-5xl font-black tracking-tighter uppercase">
+                    Vroomy<span class="text-lime-400">.be</span>
+                </h1>
+            </div>
+            
             <p class="text-zinc-400 font-medium tracking-wide text-sm md:text-base mb-10">
                 The next generation car marketplace
             </p>
@@ -44,7 +50,7 @@
 
             <div class="mt-12 pt-8 border-t border-zinc-800/60 flex flex-col sm:flex-row justify-center items-center gap-4 text-sm">
                 <span class="text-zinc-500">Are you an investor or partner?</span>
-                <a href="mailto:semenperederii@gmail.com" class="bg-lime-400 text-black px-6 py-2 rounded-xl font-bold hover:bg-lime-300 transition-colors">
+                <a href="mailto:semenperederii@gmail.com" class="bg-lime-400 text-black px-6 py-2 rounded-xl font-bold hover:bg-lime-300 transition-colors shadow-[0_0_15px_rgba(163,230,53,0.15)]">
                     Contact Us
                 </a>
             </div>
