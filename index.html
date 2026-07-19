@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vroomy - The Next Generation Car Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { lime: { 400: '#a3e635' } }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen flex flex-col justify-center items-center p-4 selection:bg-lime-400 selection:text-black">
+    
+    <div class="max-w-2xl w-full text-center space-y-8 p-10 border border-zinc-800/50 bg-zinc-900/30 rounded-3xl backdrop-blur-sm shadow-2xl relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-48 h-48 bg-lime-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-lime-400/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tighter uppercase mb-2">
+                Vroomy<span class="text-lime-400">.be</span>
+            </h1>
+            <p class="text-zinc-400 font-medium tracking-wide text-sm md:text-base mb-10">
+                The next generation car marketplace
+            </p>
+
+            <div class="w-full h-[1px] bg-zinc-800/60 my-8"></div>
+
+            <div class="flex flex-col items-center gap-4">
+                <span class="material-symbols-outlined text-5xl text-lime-400 animate-bounce">
+                    construction
+                </span>
+                <h2 class="text-2xl font-bold">We are building something awesome.</h2>
+                <p class="text-zinc-500 text-sm max-w-md">
+                    Our platform is currently in closed development. We are working hard to bring you the best experience for buying and selling cars.
+                </p>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-zinc-800/60 flex flex-col sm:flex-row justify-center items-center gap-4 text-sm">
+                <span class="text-zinc-500">Are you an investor or partner?</span>
+                <a href="mailto:hello@vroomy.be" class="bg-lime-400 text-black px-6 py-2 rounded-xl font-bold hover:bg-lime-300 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
